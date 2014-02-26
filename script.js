@@ -25,7 +25,7 @@ function draw(func) {
 function drawFunction(ctx, canvas, func) {
 
   var xx, yy; 
-  var dx = 0.01;
+  var dx = 0.05;
   var x0 = 0.5 + 0.5 * canvas.width;
   var y0 = 0.5 + 0.5 * canvas.height;
   var scale = 20;
@@ -33,7 +33,7 @@ function drawFunction(ctx, canvas, func) {
   var iMin = Math.round(-x0 / dx);
     
   ctx.beginPath();
-  ctx.lineWidth = 1;
+  ctx.lineWidth = 1.5;
   ctx.strokeStyle = "rgb(66,44,255)";
 
   for (var i = iMin; i <= iMax; i++) {
